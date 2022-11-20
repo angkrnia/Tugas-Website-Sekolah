@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data | SMA 8 TNG</title>
+    <!-- Font Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./assets/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="./images/logo-sekolah.png" type="image/x-icon" />
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css" />
+    <!-- Custom CSS for this Website -->
+    <link rel="stylesheet" href="./assets/util-style.css">
+    <!-- Data Table CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img class="logo-img" src="./images/logo-sekolah.png" width="75" alt="" />
+                <p class="logo-text">
+                    SMAN 8 KABUPATEN<span style="display: block">TANGERANG</span>
+                </p>
+                <div id="menu" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="nav-item" href="index.html">Home</a></li>
+                <li><a class="nav-item" href="achievement.html">Achievement</a></li>
+                <li><a class="nav-item" href="extrakurikuler.html">Extrakurikuler</a></li>
+                <li><a class="nav-item" href="data.html">Data</a></li>
+                <li><a class="nav-item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="swiper mySwiper">
+            <div class="welcome">
+                <h2 style="margin-bottom: 10px;">DAFTAR GURU DAN PEGAWAI</h2>
+                <h1>SMA NEGERI 8 <span style="display: block;">KABUPATEN TANGERANG</span></h1>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/slide2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slide3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slide4.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slide5.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slide1.png" alt="" />
+                </div>
+            </div>
+            <div style="z-index: 99">
+                <div class="swiper-button-next white"></div>
+                <div class="swiper-button-prev white"></div>
+                <div class="swiper-pagination white"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="title-util">
+                    <h1>DAFTAR GURU DAN PEGAWAI</h1>
+                </div>
+                <table id="table" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>NIP</th>
+                            <th>Golongan</th>
+                            <th>Jabatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer-distributed" id="contact">
+        <div class="footer-left">
+            <h3>SMA 8 TNG</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#about">About</a>
+                ·
+                <a href="#gallery">Gallery</a>
+                ·
+                <a href="achievement.html">Achievement</a>
+                ·
+                <a href="extrakurikuler.html">Eskul</a>
+                ·
+                <a href="data.html">Data</a>
+            </p>
+            <p class="footer-school-name">Website SMA 8 TNG © 2022</p>
+            <p class="footer-school-name">Created with <i class="bi bi-heart-fill"></i> by <a target="_blank"
+                    href="https://instagram.com/angkrnia">Angga Kurnia</a>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Contact Us</p>
+            <form action="#" method="get">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="./assets/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Data table -->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+        });
+    </script>
+    <script src="./assets/guru.js"></script>
+</body>
+
+</html>
