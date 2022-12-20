@@ -1,5 +1,5 @@
 DEMO
-## https://anggakurnia.me/Tugas-Website-Sekolah/
+### https://anggakurnia.me/Tugas-Website-Sekolah/
 
 TUGAS PEMROGRAMAN WEB 1
 MEMBUAT WEBSITE KEGIATAN SEKOLAH
